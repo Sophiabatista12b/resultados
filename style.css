@@ -17,11 +17,14 @@ font-family: "inter", sans-serif;
     --memorial-bg: #FFB21E;
     --verbal-bg: #00BB8F;
     --visual-bg: #1125D6;
+    --very-light-blue: #ECF2FF;
+
 
 }
 
 body {
     font-size: 1.6rem;
+    background-color: var(--very-light-blue);
 }
 
 .Resultados {
@@ -73,6 +76,7 @@ body {
 
 .resumo {
     padding: 2.4rem 3.2rem;
+    background: var(--white);
 }
 
 .resumo h2 {
@@ -134,5 +138,60 @@ body {
     border-radius: 12.8rem;
     font-size: 1.8rem;
     font-weight: 700;
-    
+
+}
+
+@media (min-width: 736px) {
+    body {
+        min-height: 100svh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 736px;
+        background: var(--white);
+        border-radius: 3.2rem 0 0 3.2rem;
+
+    }
+
+    .Resultados{
+        padding-block: 3.8rem;
+        border-radius: 3.2rem;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    .Resultados h1 {
+        font-size: 2.4rem;
+        margin-bottom: 3.6rem;
+    }
+
+    .Resultados div {
+        width: 20rem;
+        height: 10rem;
+        margin-bottom: 2.8rem;
+    }
+
+    .Resultados div strong:nth-of-type(1) {
+        font-size: 7.2rem;
+    }
+
+    .Resultados div strong:nth-of-type(2) {
+        font-size: 1.8rem;
+    }
+
+    .Resultados h2 {
+        font-size: 3.2rem; 
+        margin-bottom: 1.6rem;
+    }
+
+    .Resultados p {
+        font-size: 1.8rem;
+    }
+
 }
